@@ -1,0 +1,37 @@
+
+
+ #include<iostream>
+
+    using namespace std;
+
+    int main ()
+
+    {
+
+        int  n, j, maximum, minimum;
+
+        cout << "Enter the size of the array : ";
+        cin >> n;
+        int arr[n];
+        cout << "Enter the elements of the array : "<<endl;
+        for (j = 0; j < n; j++)
+            cin >> arr[j];
+        maximum = arr[0];
+        for (j = 0; j < n; j++)
+        {
+            if (maximum < arr[j])
+                maximum = arr[j];
+        }
+        minimum = arr[0];
+        for (j = 0; j < n; j++)
+        {
+            if (minimum > arr[j])
+                minimum = arr[j];
+        }
+        cout << "Largest element : " << maximum<<endl;
+        cout << "Smallest element : " << minimum<<endl;
+
+        return 0;
+
+    }
+
